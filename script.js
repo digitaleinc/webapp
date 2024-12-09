@@ -102,7 +102,7 @@ async function sendDataToServer(data) {
         // Handle error
         return result;
     } catch (error) {
-        // console.error("Error sending data to server:", error);
+        console.error("Error sending data to server:", error);
         // Handle error
         return null;
     }
@@ -132,7 +132,6 @@ function handleCardClicks() {
 
                     const userData = {
                         user_id: tg.initDataUnsafe?.user?.id,
-                        message: `${cardsToSend.join(", ")}`,
                         selected_cards: cardsToSend
                     };
 
