@@ -85,7 +85,7 @@ function capitalize(str) {
 
 async function sendDataToServer(data) {
     try {
-        const response = await fetch("http://62.60.154.249:5000/getdata", {
+        const response = await fetch("https://62.60.154.249:443/getdata", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
